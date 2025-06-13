@@ -17,7 +17,8 @@ This is a responsive landing page built using **React**, **TypeScript**, and **T
 ![Landing Page Screenshot](./screenshot.png)
 
 
-### Project Structure
+### Project Folder Structure
+```
 app/
 ├── public/
 ├── src/
@@ -42,3 +43,4 @@ app/
 ├── postcss.config.js
 ├── package.json
 └── README.md
+```
