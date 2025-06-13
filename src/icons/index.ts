@@ -1,0 +1,29 @@
+// src/icons/index.ts
+export { ReactComponent as Logo } from '@/assets/icons/logo.svg';
+export { ReactComponent as LogoIpsum } from '@/assets/icons/logoipsum.svg';
+export { ReactComponent as SignIn } from '@/assets/icons/login.svg';
+export { ReactComponent as User } from '@/assets/icons/user.svg';
+export { ReactComponent as CheckCircle } from '@/assets/icons/CheckCircle.svg';
+export { ReactComponent as ArrowRight } from '@/assets/icons/ArrowRight.svg';
+
+export { ReactComponent as RoundedBell } from '@/assets/icons/rounded-bell.svg';
+export { ReactComponent as RoundedCalendar } from '@/assets/icons/rounded-calendar.svg';
+export { ReactComponent as RoundedComments } from '@/assets/icons/rounded-comments.svg';
+export { ReactComponent as RoundedDashboard } from '@/assets/icons/rounded-dashboard.svg';
+export { ReactComponent as RoundedNotes } from '@/assets/icons/rounded-notes.svg';
+export { ReactComponent as RoundedSecurity } from '@/assets/icons/rounded-security.svg';
+export { ReactComponent as RoundedSupport } from '@/assets/icons/rounded-support.svg';
+export { ReactComponent as RoundedUsers } from '@/assets/icons/rounded-users.svg';
+
+export { ReactComponent as BarChart } from '@/assets/icons/bar-chart.svg';
+export { ReactComponent as BarBriefcase } from '@/assets/icons/bx-briefcase.svg';
+export { ReactComponent as BarRocket } from '@/assets/icons/bx-rocket.svg';
+export { ReactComponent as BarStart } from '@/assets/icons/bx-star.svg';
+
+export { ReactComponent as IconCheck } from '@/assets/icons/bx-check.svg';
+export { ReactComponent as IconX } from '@/assets/icons/bx-x.svg';
+export { ReactComponent as IconSmiley1 } from '@/assets/icons/smiley-1.svg';
+export { ReactComponent as IconSmiley2 } from '@/assets/icons/smiley-2.svg';
+export { ReactComponent as IconSmiley3 } from '@/assets/icons/smiley-3.svg';
+
+
