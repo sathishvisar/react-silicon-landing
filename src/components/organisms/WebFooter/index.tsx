@@ -16,9 +16,9 @@ const socialLinks = [
   { link: '/', name: 'Twitter' },
 ];
 
-const WebHeader: React.FC = () => {
+const WebFooter: React.FC = () => {
   return (
-    <header className="container py-24">
+    <footer className="container py-24">
         <div className='grid grid-cols-12'>
             <div className='col-span-4'>
                 <Icon name="Logo" className="w-[44] h-auto mb-6" />
@@ -54,8 +54,8 @@ const WebHeader: React.FC = () => {
                 </BodyText>
             </div>
         </div>
-    </header>
+    </footer>
   );
 };
 
-export default WebHeader;
+export default WebFooter;

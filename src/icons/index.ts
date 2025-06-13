@@ -27,3 +27,13 @@ export { ReactComponent as IconSmiley2 } from '@/assets/icons/smiley-2.svg';
 export { ReactComponent as IconSmiley3 } from '@/assets/icons/smiley-3.svg';
 
 
+export { ReactComponent as Dropbox } from '@/assets/icons/Dropbox.svg';
+export { ReactComponent as Evernote } from '@/assets/icons/Evernote.svg';
+export { ReactComponent as Gmail } from '@/assets/icons/Gmail.svg';
+export { ReactComponent as Google } from '@/assets/icons/Google.svg';
+export { ReactComponent as MailChimp } from '@/assets/icons/MailChimp.svg';
+export { ReactComponent as Slack } from '@/assets/icons/Slack.svg';
+export { ReactComponent as Trello } from '@/assets/icons/Trello.svg';
+export { ReactComponent as Zoom } from '@/assets/icons/Zoom.svg';
+
+
