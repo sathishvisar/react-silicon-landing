@@ -31,21 +31,20 @@ const WebHeader: React.FC = () => {
                     <ul className="flex flex-col gap-2">
                         {manu.map((item, index) => (
                             <li key={index}>
-                            <Navigation href={item.link} className='text-gray-800'>{item.name}</Navigation>
+                            <Navigation href={item.link} className='text-gray-900'>{item.name}</Navigation>
                             </li>
                         ))}
                     </ul>
                     <ul className="flex flex-col gap-2">
                         {socialLinks.map((item, index) => (
                             <li key={index}>
-                            <Navigation href={item.link} className='text-gray-800'>{item.name}</Navigation>
+                            <Navigation href={item.link} className='text-gray-900'>{item.name}</Navigation>
                             </li>
                         ))}
                     </ul>
-                    <div>
-                        
-                        <Navigation className='text-gray-800'>Contact Us</Navigation>
-                        <Navigation href='mailto:example@gmail.com' className='text-gray-800'>example@gmail.com</Navigation>
+                    <div className='flex flex-col gap-2'>
+                        <Navigation className='text-gray-900'>Contact Us</Navigation>
+                        <Navigation href='mailto:example@gmail.com' className='text-gray-900'>example@gmail.com</Navigation>
                     </div>
                 </div>
             </div>

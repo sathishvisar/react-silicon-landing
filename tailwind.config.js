@@ -66,6 +66,7 @@ module.exports = {
       },
       boxShadow: {
         'sm': '0 .275rem .75rem -.0625rem rgba(11, 15, 25, 0.06), 0 .125rem .4rem -.0625rem rgba(11, 15, 25, 0.03)',
+        'button': '0 4px 4px rgba(0, 0, 0, 0.25)',
       },
     },
   },

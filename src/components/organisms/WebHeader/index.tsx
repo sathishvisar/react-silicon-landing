@@ -7,8 +7,8 @@ import { Icon } from './../../Icon';
 
 const WebHeader: React.FC = () => {
   return (
-    <header className={clsx('container mx-auto p-4 flex justify-between')}>
-        <div className={clsx('flex items-center gap-x-8')}>
+    <header className={clsx('container mx-auto py-4 flex justify-between')}>
+        <div className={clsx('flex items-center gap-x-12')}>
           <Icon name="Logo" className="w-[44] h-auto" />
           <Menu />
         </div>

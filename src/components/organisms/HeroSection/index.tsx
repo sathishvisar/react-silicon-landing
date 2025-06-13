@@ -31,7 +31,7 @@ const HeroSection: React.FC = () => {
 
   return (<>
     <section className="relative -mt-16 py-24 bg-contain bg-right bg-no-repeat -z-10"  ref={imgRef} style={{ backgroundImage: `url(${heroImage})`,     backgroundPositionX: `calc(100% + 10rem)` }}>
-      <div className="container mx-auto p-4 flex justify-between grid grid-cols-12" onMouseMove={handleMouseMove}
+      <div className="container mx-auto flex justify-between grid grid-cols-12" onMouseMove={handleMouseMove}
             onMouseLeave={handleMouseLeave}>
         <div className="col-span-5 flex-wrap h-full pt-5 mt-4">
           <div className="flex items-center w-full px-4 lg:w-5/12 lg:px-0">
@@ -49,7 +49,7 @@ const HeroSection: React.FC = () => {
                 size="medium"
                 shape="rounded"
                 color="blue"
-                className="mb-[112px]"
+                className="mb-[112px] shadow-button"
               >
                 Get started for free
               </Button>

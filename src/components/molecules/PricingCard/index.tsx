@@ -1,6 +1,7 @@
 import { Button } from '@/components/atoms/Button';
 import { BodyText, Heading } from '@/components/atoms/Typography';
 import { Icon, IconName } from '@/components/Icon';
+import clsx from 'clsx';
 import React from 'react'
  
 interface Features {
@@ -31,7 +32,11 @@ const PricingCard: React.FC<PricingCardProps> = ({plan}) => {
                 plan.features.map((item, index) => <li key={index} className="flex items-center gap-2"><Icon name={item.isAvailable ? 'IconCheck' : 'IconX'} />{item.feature}</li>)
             }
         </ul>
-        <Button color={plan.isPopular ? 'blue' : 'secondary'} size='small'   className='w-full'>Start free trial</Button>
+        <Button 
+            color={plan.isPopular ? 'blue' : 'secondary'} 
+            size='small'   
+            className={clsx('w-full', { 'shadow-button': plan.isPopular })}
+            >Start free trial</Button>
     </div>
 }
 
