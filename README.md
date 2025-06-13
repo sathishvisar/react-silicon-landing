@@ -1,3 +1,23 @@
+## ✨ Landing Page – Silicon Community
+
+This is a responsive landing page built using **React**, **TypeScript**, and **Tailwind CSS** based on the following Figma design:
+
+🎨 **Figma Design**:  
+[Silicon Community – Figma](https://www.figma.com/design/y2GshAJT35rHB9dQmzDYx4/Silicon--Community-?node-id=4424-20372&t=z6N05ihN2zgl7TWL-0)
+
+### 🛠 Tech Stack
+
+- ⚛️ React
+- 🧑‍💻 TypeScript
+- 🎨 Tailwind CSS
+
+### 📸 Preview
+
+<!-- Optional: Add a screenshot of the landing page -->
+![Landing Page Screenshot](./screenshot.png)
+
+
+### Project Structure
 app/
 ├── public/
 ├── src/
