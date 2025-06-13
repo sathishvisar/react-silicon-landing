@@ -63,7 +63,7 @@ interface NavigationProps extends TypographyProps {
 
 export const Navigation = ({ children, className, href, as }: NavigationProps) => {
   const baseClass = clsx(
-    'text-navigation font-manrope dark:text-primary-white dark:text-opacity-85',
+    'text-navigation',
     className
   );
 

@@ -22,7 +22,7 @@ export interface PricingCardProps {
 }
 
 const PricingCard: React.FC<PricingCardProps> = ({plan}) => {
-    return <div className='grid border border-gray-300 rounded-xl p-12 gap-y-4 shadow-sm'>
+    return <div className={clsx('grid border border-gray-300 rounded-xl p-12 gap-y-4 shadow-sm border-opacity-[0.35]', { 'border-primary-brand': plan.isPopular })}>
         <Icon name={plan.icon} className='m-auto' />
         <BodyText variant='body-xl' className='text-gray-600'>{plan.plan}</BodyText>
         <Heading variant='h2'>$ {plan.pricing}</Heading>

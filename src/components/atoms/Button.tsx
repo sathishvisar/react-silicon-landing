@@ -20,7 +20,7 @@ interface CustomButtonProps {
 
 const sizeMap: Record<Size, string> = {
   large: 'text-lg px-4 py-4',
-  medium: 'text-base px-4 py-3.5',
+  medium: 'text-base px-4 py-2.5',
   small: 'text-body-s px-4 py-2',
 };
 
@@ -46,7 +46,7 @@ export const Button: React.FC<CustomButtonProps> = ({
   onClick,
 }) => {
   const baseClasses = clsx(
-    'inline-flex items-center justify-center font-semibold transition duration-200',
+    'inline-flex items-center justify-center transition duration-200',
     sizeMap[size],
     shapeMap[shape],
     colorMap[color],
