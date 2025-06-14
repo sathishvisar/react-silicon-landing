@@ -37,3 +37,6 @@ export { ReactComponent as Trello } from '@/assets/icons/Trello.svg';
 export { ReactComponent as Zoom } from '@/assets/icons/Zoom.svg';
 
 
+export { ReactComponent as IconEmail } from '@/assets/icons/IconEmail.svg';
+export { ReactComponent as IconEnvelope } from '@/assets/icons/bx-envelope.svg';
+

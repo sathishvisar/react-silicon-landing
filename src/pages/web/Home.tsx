@@ -1,21 +1,24 @@
-import React from "react"
-import HomeInfoCards from "@/components/organisms/HomeInfoCards"
-import HeroSection from "@/components/organisms/HeroSection"
-import InfoHorizontalTab from "@/components/organisms/InfoHorizontalTab"
-import HomePricing from "@/components/organisms/HomePricing"
-import EmailSubscription from "@/components/organisms/EmailSubscription"
-import TopWorkTools from "@/components/organisms/TopWorkTools"
-import Testmonial from "@/components/organisms/Testimonial"
+import React, { Suspense } from "react"
+
+const HomeInfoCards = React.lazy(() => import('@/components/organisms/HomeInfoCards'));
+const HeroSection = React.lazy(() => import('@/components/organisms/HeroSection'));
+const InfoHorizontalTab = React.lazy(() => import('@/components/organisms/InfoHorizontalTab'));
+const HomePricing = React.lazy(() => import('@/components/organisms/HomePricing'));
+const EmailSubscription = React.lazy(() => import('@/components/organisms/EmailSubscription'));
+const TopWorkTools = React.lazy(() => import('@/components/organisms/TopWorkTools'));
+const Testmonial = React.lazy(() => import('@/components/organisms/Testimonial'));
 
 const HomePage: React.FC = () => {
     return <>
-        <HeroSection />
-        <HomeInfoCards />
-        <InfoHorizontalTab />
-        <HomePricing />
-        <Testmonial />
-        <TopWorkTools />
-        <EmailSubscription />
+        <Suspense fallback={<div>Loading...</div>}>
+            <HeroSection />
+            <HomeInfoCards />
+            <InfoHorizontalTab />
+            <HomePricing />
+            <Testmonial />
+            <TopWorkTools />
+            <EmailSubscription />
+        </Suspense>
     </>
 }
 
