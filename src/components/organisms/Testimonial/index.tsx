@@ -25,7 +25,7 @@ const Testmonial: React.FC = () => {
         }
     }
 
-    return <section className="bg-gray-100 p-24">
+    return <section className="bg-gray-100 p-24 ">
             <div className="container">
                 <div className="grid grid-cols-12 gap-6">
                     <div className="col-span-6 bg-gray-900 text-white p-12 rounded-lg">
