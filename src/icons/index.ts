@@ -40,3 +40,6 @@ export { ReactComponent as Zoom } from '@/assets/icons/Zoom.svg';
 export { ReactComponent as IconEmail } from '@/assets/icons/IconEmail.svg';
 export { ReactComponent as IconEnvelope } from '@/assets/icons/bx-envelope.svg';
 
+export { ReactComponent as IconChevronLeft } from '@/assets/icons/chevron-left.svg';
+export { ReactComponent as IconChevronRight } from '@/assets/icons/chevron-right.svg';
+export { ReactComponent as IconDoubleQuotes } from '@/assets/icons/double-quotes.svg';

@@ -6,7 +6,7 @@ const InfoHorizontalTab = React.lazy(() => import('@/components/organisms/InfoHo
 const HomePricing = React.lazy(() => import('@/components/organisms/HomePricing'));
 const EmailSubscription = React.lazy(() => import('@/components/organisms/EmailSubscription'));
 const TopWorkTools = React.lazy(() => import('@/components/organisms/TopWorkTools'));
-const Testmonial = React.lazy(() => import('@/components/organisms/Testimonial'));
+const Testimonial = React.lazy(() => import('@/components/organisms/Testimonial'));
 
 const HomePage: React.FC = () => {
     return <>
@@ -15,7 +15,7 @@ const HomePage: React.FC = () => {
             <HomeInfoCards />
             <InfoHorizontalTab />
             <HomePricing />
-            <Testmonial />
+            <Testimonial />
             <TopWorkTools />
             <EmailSubscription />
         </Suspense>
