@@ -65,34 +65,34 @@ const HomeInfoCards: React.FC = () => {
           return <InfoCard key={index} {...item} />;
         })}
       </div>
-      <div className="grid grid-cols-12 gap-x-28">
-        <div className="col-span-7 hidden lg:block">
-          <img
-            src={ImgManageYourWork}
-            alt="Manage Your Work"
-            className="w-full"
-          />
-        </div>
-        <div className="col-span-12 lg:col-span-5 place-content-center">
-          <div>
-            <Heading variant="h2" className="mb-8">
-              Manage Your Work
-            </Heading>
-            <ul className="flex flex-col gap-2 text-body-m text-gray-700 mb-[40px]">
-                {
-                    features.map((item, index) => <li key={index} className="flex items-center gap-2"><Icon name="CheckCircle" />{item}</li>)
-                }
-            </ul>
-            <Button
-              size="medium"
-              shape="rounded"
-              color="blue"
-              className="gap-2"
-            >
-              Learn more <Icon name="ArrowRight" />
-            </Button>
+      <div className="grid grid-cols-12">
+          <div className="col-span-12 md:col-span-6 lg:col-span-7">
+            <img
+              src={ImgManageYourWork}
+              alt="Manage Your Work"
+              className="w-full"
+            />
           </div>
-        </div>
+          <div className="col-span-12 md:col-span-6 lg:col-span-5 place-content-center">
+             <div className="sm:text-center md:text-left mx-auto w-fit">
+                <Heading variant="h2" className="mb-8">
+                  Manage Your Work
+                </Heading>
+                <ul className="flex flex-col gap-2 text-body-m text-gray-700 mb-[40px]">
+                    {
+                        features.map((item, index) => <li key={index} className="flex items-center gap-2"><Icon name="CheckCircle" />{item}</li>)
+                    }
+                </ul>
+                <Button
+                  size="medium"
+                  shape="rounded"
+                  color="blue"
+                  className="gap-2"
+                >
+                  Learn more <Icon name="ArrowRight" />
+                </Button>
+             </div>
+          </div>
       </div>
     </section>
   );
