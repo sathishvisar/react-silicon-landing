@@ -30,9 +30,8 @@ const HeroSection: React.FC = () => {
   };
 
   return (<>
-    <section className="relative -mt-16 py-24 bg-contain bg-right bg-no-repeat -z-10"  ref={imgRef} style={{ backgroundImage: `url(${heroImage})`,     backgroundPositionX: `calc(100% + 10rem)` }}>
-      <div className="container mx-auto flex justify-between grid grid-cols-12" onMouseMove={handleMouseMove}
-            onMouseLeave={handleMouseLeave}>
+    <section className="relative pt-24 bg-contain bg-right bg-no-repeat -z-10">
+      <div className="container mx-auto flex justify-between grid grid-cols-12">
         <div className="col-span-5 flex-wrap h-full pt-5 mt-4">
           <div className="flex items-center w-full px-4 lg:w-5/12 lg:px-0">
             <div className="flex-1">
@@ -67,16 +66,19 @@ const HeroSection: React.FC = () => {
             </div>
           </div>
         </div>
-        {/* <div className="col-span flex h-full -mt-8"
-            onMouseMove={handleMouseMove}
-            onMouseLeave={handleMouseLeave}>
-          <div className="absolute inset-0  w-full h-full -z-10">
-            <div ref={imgRef}
-              className="w-full h-full bg-no-repeat bg-right bg-auto transition-transform duration-300 ease-out will-change-transform"
-               
-            ></div>
-          </div>
-        </div> */}
+        <div className="col-span-7 flex h-full -mt-8"
+          onMouseMove={handleMouseMove}
+          onMouseLeave={handleMouseLeave}>
+          <div className="absolute top-0 right-0 h-full -z-10 bg-no-repeat bg-right left-1/2 w-1/2 bg-cover absolute -mr-12 -mt-12" 
+            ref={imgRef} 
+            
+            style={{ backgroundImage: `url(${heroImage})`, backgroundPositionX: `calc(100% + 5rem)` }} />
+            {/* <div ref={imgRef} style={{ backgroundImage: `url(${heroImage})`,     backgroundPositionX: `calc(100% + 10rem)` }}
+              className="w-full h-full bg-no-repeat bg-right bg-auto transition-transform duration-300 ease-out will-change-transform" />
+                onMouseMove={handleMouseMove}
+            onMouseLeave={handleMouseLeave}
+             */}
+        </div>
       </div>
     </section>
   </>);

@@ -1,9 +1,8 @@
-import React, { PropsWithChildren } from "react"
+import React from "react"
 import { Outlet } from "react-router-dom"
 
 
-
-const AppLayout: React.FC = (props: PropsWithChildren) => {
+const AppLayout: React.FC = () => {
     return <div>
         <Outlet />
     </div>

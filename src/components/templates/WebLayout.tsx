@@ -4,13 +4,14 @@ import WebHeader from "../organisms/WebHeader"
 import WebFooter from "../organisms/WebFooter"
 
 
-
 const WebLayout: React.FC = () => {
-    return <>
+    return <div className="flex min-h-screen flex-col">
         <WebHeader />
-        <Outlet />
+        <main className="flex-1">
+            <Outlet />
+        </main>
         <WebFooter />
-    </>
+    </div>
 }
 
 export default WebLayout
