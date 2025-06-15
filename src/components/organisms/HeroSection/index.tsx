@@ -32,7 +32,7 @@ const HeroSection: React.FC = () => {
   return (<>
     <section className="relative pt-24 bg-contain bg-right bg-no-repeat -z-10">
       <div className="container mx-auto flex justify-between grid grid-cols-12">
-        <div className="col-span-12 xl:col-span-5 flex-wrap h-full pt-5 mt-4">
+        <div className="col-span-12 lg:col-span-7 xl:col-span-6 flex-wrap h-full pt-5 mt-4">
           <div className="w-full px-4 lg:px-0">
             <div className="flex-1 text-center lg:text-left">
               <Display variant="d4" className="mb-8 pt-5">
@@ -66,7 +66,7 @@ const HeroSection: React.FC = () => {
             </div>
           </div>
         </div>
-        <div className="col-span-7 flex h-full -mt-8 hidden lg:block"
+        <div className="col-span-12 lg:col-span-5 xl:col-span-6 flex h-full -mt-8 hidden lg:block"
           onMouseMove={handleMouseMove}
           onMouseLeave={handleMouseLeave}>
           <div className="absolute top-12 right-0 h-full -z-10 bg-no-repeat bg-right left-1/2 w-1/2 bg-cover md:bg-contain lg:bg-contain absolute -mr-12 lg:-mt-12" 

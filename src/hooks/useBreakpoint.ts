@@ -21,14 +21,13 @@ export function useBreakpoint() {
     return () => window.removeEventListener('resize', handleResize);
   }, []);
 
-  return bp; // 'sm' | 'md' | 'lg' | 'xl' | '2xl'
+  return bp;
 }
 
 
 function getBreakpoint(width: number): keyof typeof breakpoints {
-  // loop from largest → smallest
   for (const [label, min] of Object.entries(breakpoints)) {
     if (width >= min) return label as keyof typeof breakpoints;
   }
-  return 'sm'; // fallback
+  return 'sm';
 }

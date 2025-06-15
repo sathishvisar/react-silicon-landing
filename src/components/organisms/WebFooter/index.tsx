@@ -72,7 +72,7 @@ const WebFooter: React.FC = () => {
                     </div>
                 </div>
             </div>
-            <div className='col-span-12 mt-16 text-center lg:text-right'>
+            <div className='col-span-12 mt-16 text-center lg:text-left'>
                 <BodyText variant='body-s' className='text-gray-600'>
                     2021. All rights reserved. Silicon Template
                 </BodyText>
