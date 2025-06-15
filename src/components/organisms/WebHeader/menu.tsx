@@ -8,10 +8,15 @@ const manu = [
   { link: '/contact', name: 'Contact' },
 ];
 
-const Menu: React.FC = () => {
+interface Props {
+  classname?: string;
+  direction?: string;
+}
+
+const Menu: React.FC<Props> = ({classname, direction}) => {
   return (
-    <nav>
-      <ul className="flex space-x-4">
+    <nav className={classname}>
+      <ul className={`flex ${direction === 'col' ? 'flex-col space-y-4' : 'flex-row space-x-4'}`}>
         {manu.map((item, index) => (
           <li key={index}>
             <Navigation href={item.link} className='text-gray-800'>{item.name}</Navigation>

@@ -60,20 +60,20 @@ const HomeInfoCards: React.FC = () => {
       <Heading variant="h1" className="mb-16 text-center">
         Stay Organized & Connected
       </Heading>
-      <div className="grid grid-cols-4 gap-x-8 gap-y-[52px] mb-28">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-x-8 gap-y-[52px] mb-28">
         {cardInfo.map((item, index) => {
           return <InfoCard key={index} {...item} />;
         })}
       </div>
       <div className="grid grid-cols-12 gap-x-28">
-        <div className="col-span-7">
+        <div className="col-span-7 hidden lg:block">
           <img
             src={ImgManageYourWork}
             alt="Manage Your Work"
             className="w-full"
           />
         </div>
-        <div className="col-span-5 place-content-center">
+        <div className="col-span-12 lg:col-span-5 place-content-center">
           <div>
             <Heading variant="h2" className="mb-8">
               Manage Your Work

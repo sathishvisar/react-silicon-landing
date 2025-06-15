@@ -3,7 +3,7 @@ import clsx from 'clsx';
 
 type Size = 'large' | 'medium' | 'small';
 type Shape = 'square' | 'rounded' | 'pill';
-type Color = 'green' | 'blue' | 'secondary';
+type Color = 'green' | 'blue' | 'secondary' | 'transparent';
 type ButtonType = 'button';
 
 interface CustomButtonProps {
@@ -34,6 +34,7 @@ const colorMap: Record<Color, string> = {
   secondary: 'bg-gray-200 text-gray-800',
   green: 'bg-green-500 text-white',
   blue: 'bg-primary-brand text-white',
+  transparent: 'bg-transparent text-gray-800'
 };
 
 export const Button: React.FC<CustomButtonProps> = ({
@@ -46,7 +47,7 @@ export const Button: React.FC<CustomButtonProps> = ({
   onClick,
 }) => {
   const baseClasses = clsx(
-    'inline-flex items-center justify-center transition duration-200',
+    'inline-flex items-center justify-center transition duration-200 cursor-pointer',
     sizeMap[size],
     shapeMap[shape],
     colorMap[color],

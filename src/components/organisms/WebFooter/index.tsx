@@ -27,19 +27,19 @@ const WebFooter: React.FC = () => {
   return (
     <footer className="container py-24">
         <div className='grid grid-cols-12'>
-            <div className='col-span-4'>
+            <div className='col-span-12 md:col-span-4'>
                 <Icon name="Logo" className="w-[44] h-auto mb-6" />
                 <BodyText variant='body-s' className='text-gray-800 mb-[46px]'>
                     Proin ipsum pharetra, senectus eget scelerisque varius pretium platea velit. Lacus, eget eu vitae nullam proin turpis etiam mi sit. Non feugiat feugiat egestas nulla nec. Arcu tempus, eget elementum dolor ullamcorper sodales ultrices eros. 
                 </BodyText>
-                <div className='flex flex-col gap-y-2'>
+                <div className='flex flex-col gap-y-2 text-center lg:text-right'>
                     <BodyText variant='body-xl'>Subscribe to our newsletter</BodyText>
                     <InputEmailSubscribe label='Subscribe' className="mb-4" />
                 </div>
             </div>
-            <div className='col-start-7 col-span-6'>
+            <div className='col-span-12 md:col-start-7'>
                 <div className='grid grid-cols-12'>
-                    <div className='col-span-4'>
+                    <div className='col-span-12 md:col-span-4'>
                         <ul className="flex flex-col gap-2 mb-10">
                             {menu.map((item, index) => (
                                 <li key={index}>
@@ -55,7 +55,7 @@ const WebFooter: React.FC = () => {
                             ))}
                         </ul>
                     </div>
-                    <div className='col-span-4'>
+                    <div className='col-span-12 md:col-span-4'>
                         <ul className="flex flex-col gap-2">
                             {socialLinks.map((item, index) => (
                                 <li key={index}>
@@ -64,7 +64,7 @@ const WebFooter: React.FC = () => {
                             ))}
                         </ul>
                     </div>
-                    <div className='col-span-4'>
+                    <div className='col-span-12 md:col-span-4'>
                          <div className='flex flex-col gap-2'>
                             <Navigation className='text-gray-800'>Contact Us</Navigation>
                             <Navigation href='mailto:example@gmail.com' className='text-gray-800'>example@gmail.com</Navigation>
@@ -72,7 +72,7 @@ const WebFooter: React.FC = () => {
                     </div>
                 </div>
             </div>
-            <div className='col-span-12 mt-16'>
+            <div className='col-span-12 mt-16 text-center lg:text-right'>
                 <BodyText variant='body-s' className='text-gray-600'>
                     2021. All rights reserved. Silicon Template
                 </BodyText>

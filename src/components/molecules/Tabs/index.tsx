@@ -25,7 +25,7 @@ const Tabs: React.FC<TabsProps> = ({items}) => {
     const activeItem = items[activeTab]['content'] || null;
 
     return <>
-        <div className="flex place-content-center gap-4 mb-10">
+        <div className="flex place-content-center gap-4 mb-10 flex-col lg:flex-row">
             {
                 items.map((item:any, index: number) => {
                     return <Button size="small" color={index === activeTab ? 'blue' : 'secondary'} key={index} onClick={() => setActiveTab(index)} className="gap-2">
