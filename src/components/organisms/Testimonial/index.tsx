@@ -25,7 +25,7 @@ const Testmonial: React.FC = () => {
         }
     }
 
-    return <section className="bg-gray-100 p-24 ">
+    return <section className="bg-gray-100 p-4 md:p-24">
             <div className="container">
                 <div className="grid grid-cols-12 gap-6">
                     <div className="col-span-12 lg:col-span-6 bg-gray-900 text-white p-12 rounded-lg">
@@ -52,7 +52,7 @@ const Testmonial: React.FC = () => {
                         </div>
                         <div className="flex place-content-center gap-4">
                             { TestimonialsData.map ((item, index) => {
-                                return <span key={index} className={`flex w-[5px] h-[5px] rounded-full ${active === index ? 'w-[24px] bg-primary-brand' : 'bg-gray-500' }`}></span>
+                                return <span key={index} className={`flex h-[5px] rounded-full ${active === index ? 'w-[24px] bg-primary-brand' : 'w-[5px] bg-gray-500' }`}></span>
                             })}
                         </div>
                     </div>

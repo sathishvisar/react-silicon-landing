@@ -33,7 +33,7 @@ const HeroSection: React.FC = () => {
     <section className="relative pt-24 bg-contain bg-right bg-no-repeat -z-10">
       <div className="container mx-auto flex justify-between grid grid-cols-12">
         <div className="col-span-12 xl:col-span-5 flex-wrap h-full pt-5 mt-4">
-          <div className="flex items-center w-full px-4 lg:w-5/12 lg:px-0">
+          <div className="w-full px-4 lg:px-0">
             <div className="flex-1 text-center lg:text-left">
               <Display variant="d4" className="mb-8 pt-5">
                 Task Management Assistant You Gonna Love

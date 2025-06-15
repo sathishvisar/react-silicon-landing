@@ -32,12 +32,12 @@ const WebFooter: React.FC = () => {
                 <BodyText variant='body-s' className='text-gray-800 mb-[46px]'>
                     Proin ipsum pharetra, senectus eget scelerisque varius pretium platea velit. Lacus, eget eu vitae nullam proin turpis etiam mi sit. Non feugiat feugiat egestas nulla nec. Arcu tempus, eget elementum dolor ullamcorper sodales ultrices eros. 
                 </BodyText>
-                <div className='flex flex-col gap-y-2 text-center lg:text-right'>
+                <div className='flex flex-col gap-y-2 text-center lg:text-left'>
                     <BodyText variant='body-xl'>Subscribe to our newsletter</BodyText>
                     <InputEmailSubscribe label='Subscribe' className="mb-4" />
                 </div>
             </div>
-            <div className='col-span-12 md:col-start-7'>
+            <div className='col-span-12 md:col-start-7 text-center md:text-left'>
                 <div className='grid grid-cols-12'>
                     <div className='col-span-12 md:col-span-4'>
                         <ul className="flex flex-col gap-2 mb-10">

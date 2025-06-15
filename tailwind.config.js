@@ -10,19 +10,19 @@ module.exports = {
     'font-manrope',
   ],
   theme: {
+          screens: {
+        sm: "100%",
+        md: "720px",
+        lg: "960px",
+        xl: "1140px",
+        '2xl': "1320px",
+      },
     container: {
       center: true,
       // screens: {
       //   'xl': '95%',       // applies at ≥1200px
       //   '2xl': '1320px',   // applies at ≥1400px
       // },
-      screens: {
-        sm: "100%", // fluid on small screens
-        md: "720px",
-        lg: "960px",
-        xl: "1140px",
-        '2xl': "1320px",
-      },
       padding:{
         DEFAULT: '0.75rem',
       }
